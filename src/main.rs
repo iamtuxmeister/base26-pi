@@ -5,7 +5,7 @@ fn main() -> Result<()> {
     let alphabet: Vec<char> = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".chars().collect();
 
     let f = File::open("pi-dec.txt")?;
-    let mut o = File::create("pi-b26-now.txt")?;
+    let mut o = File::create("pi-b26.txt")?;
     let mut reader = BufReader::new(f);
     let mut buffer = Vec::new();
 
